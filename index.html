@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b7315c09d.js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+         <div class="nav-bar">
+        <div class="logo"><h2><span>M</span>RAD</h2></div>
+        <div class="menu">
+            <a class="active" href="#"><i class="fa-solid fa-house"></i><span>home</span> </a>
+            <a href="#"><i class="fa-solid fa-bolt"></i><span>skills</span></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-comment"></i><span>contact me</span></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-paint-roller"></i><span>work</span></a>
+            <a href="#"><i class="fa-sharp fa-solid fa-graduation-cap"></i><span>school</span></a>
+
+        </div></div>
+   <div class="contenu">
+  
+
+    <div class="home">
+
+        <h1 class="main-title">
+            HOME
+        </h1>
+         <div class="box">
+           <div class="text">
+               <h4>hello there i am </h4>
+               <h3>Mohamed Amine Mrad</h3>
+           </div>
+           
+           <div class="image">
+        <img src="photo.jpg" alt="">
+           </div>
+         </div>
+
+
+
+       </div>
+
+   </div>
+    </div>
+    <!--nav bar-->
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let all=document.querySelectorAll('.menu a');
+        let li=document.querySelectorAll('.para div')
+        var root=document.querySelector(':root');
+        var r=document.getElementById('par');
+        function f(){
+            r.classList.toggle('show')
+        }
+        
+            function active(){
+                all.forEach((e)=> 
+                e.classList.remove('active'));
+            
+            
+            this.classList.add('active');
+        
+            }
+            function chou(){
+                
+            
+                root.style.setProperty('--main-color',    this.dataset.color);
+                 
+            }
+            all.forEach((e)=> 
+                e.addEventListener('click',active
+                )
+            )
+            li.forEach((v)=> {
+                v.style.background=v.dataset.color;
+                v.addEventListener('click',chou 
+                )}
+            )
+            </script>
+</body>
+</html>
